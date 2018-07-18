@@ -13,10 +13,10 @@ public class Recv {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setUsername("ycudoyez");
-    connectionFactory.setPassword("wP4zaI_pvwfob4UOPc4FGgxkyf-oz_kC");
+    connectionFactory.setUsername("xanbziho");
+    connectionFactory.setPassword("M4Zi_bAbwrvc_is5fCk4mQCw2_I4XiYS");
     connectionFactory.setHost("rhino.rmq.cloudamqp.com");
-    connectionFactory.setVirtualHost("ycudoyez");
+    connectionFactory.setVirtualHost("xanbziho");
     Connection connection = connectionFactory.newConnection();
     Channel channel = connection.createChannel();
     channel.queueDeclare(QUEUE_NAME, false, false, false, null);
