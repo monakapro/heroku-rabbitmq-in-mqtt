@@ -45,7 +45,8 @@ public class publishAndSubscribe {
     container.start();
 
     RabbitTemplate template = new RabbitTemplate(connectionFactory);
-    template.convertAndSend("myExchange", "foo.bar", "Hello CloudAMQP!");
+//    template.convertAndSend("myExchange", "foo.bar", "Hello CloudAMQP!");
+    template.convertAndSend("Hello CloudAMQP!");
     try{
       Thread.sleep(1000);
     } catch(InterruptedException e) {
