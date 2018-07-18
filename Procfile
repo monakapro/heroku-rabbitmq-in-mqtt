@@ -1,1 +1,1 @@
-worker: sh target/bin/worker
+web: java $JAVA_OPTS -jar target/*.jar --server.port=$PORT
