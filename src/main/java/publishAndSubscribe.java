@@ -24,7 +24,7 @@ public class publishAndSubscribe {
     RabbitAdmin admin = new RabbitAdmin(connectionFactory);
     Queue queue = new Queue("myQueue");
     admin.declareQueue(queue);
-    TopicExchange exchange = new TopicExchange("myEExchange");
+    TopicExchange exchange = new TopicExchange("myExchange");
     admin.declareExchange(exchange);
     admin.declareBinding(
         BindingBuilder.bind(queue).to(exchange).with("foo.*"));
