@@ -33,7 +33,7 @@ public class publishAndSubscribe {
     SimpleMessageListenerContainer container =
         new SimpleMessageListenerContainer(connectionFactory);
     Object listener = new Object() {
-      public void handleMessage(String foo) {
+      public void handleMessage(Byte[] foo) {
         System.out.println(foo);
       }
     };
