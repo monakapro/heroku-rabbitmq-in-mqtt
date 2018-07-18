@@ -16,6 +16,7 @@ public class Recv {
     connectionFactory.setUsername("ycudoyez");
     connectionFactory.setPassword("wP4zaI_pvwfob4UOPc4FGgxkyf-oz_kC");
     connectionFactory.setHost("rhino.rmq.cloudamqp.com");
+    connectionFactory.setVirtualHost("ycudoyez");
     Connection connection = connectionFactory.newConnection();
     Channel channel = connection.createChannel();
     channel.queueDeclare(QUEUE_NAME, false, false, false, null);
